@@ -17,12 +17,3 @@ class LoadDataset():
         validation  = data['validation']
         test        = data['test']
         return train, validation, test
-    
-
-
-if __name__ == '__main__':
-    data_loader = LoadDataset('emotion')
-    data = data_loader.load_data()
-    train, validation, test = data_loader.split_train_val_test(data)
-
-    print('end')
