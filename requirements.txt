@@ -1,2 +1,5 @@
 datasets
+lime
+torch
 transformers
+scikit-learn

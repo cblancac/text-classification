@@ -2,8 +2,8 @@ from transformers import AutoTokenizer
 
 
 class TokenizeDataset():
-    def __init__(self):
-        self.model_ckpt = "distilbert-base-uncased"
+    def __init__(self, model_ckpt):
+        self.model_ckpt = model_ckpt
         self.tokenizer = AutoTokenizer.from_pretrained(self.model_ckpt)
 
     def encoded_dataset(self, dataset):
