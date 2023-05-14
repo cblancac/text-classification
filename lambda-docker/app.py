@@ -3,6 +3,9 @@ import requests
 from pathlib import Path
 
 import regex as re
+import torch
+from transformers import AutoTokenizer
+from transformers import AutoModelForSequenceClassification
 
 from exceptions import BadContentType, EndpointError, BadRequest
 
