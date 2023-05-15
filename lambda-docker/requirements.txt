@@ -1,6 +1,5 @@
 datasets
-lime
 regex
-torch
+#torch~=2.0.0
 transformers
 scikit-learn
