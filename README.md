@@ -60,7 +60,7 @@ All the files generated for the text classifier has been uploaded to my `Hugging
 
 ## :airplane: Deployment
 
-To deploy this model, four services are used from AWS:
+To deploy this model, three services are used from AWS:
 
 1. **EC2**:
 The folder lambda-docker need to be storage in the EC2 instance. This folder contains the next files:
@@ -84,4 +84,12 @@ Once created, click in your repository name and click in "View push commands". Y
 After finish the third step, acces to Lambda service, and click in the "Create function" orange button (see the image).
 
 ![image](https://github.com/cblancac/text-classification/assets/105242658/63fe7683-941d-4cf7-95cc-d05a48e814d2)
- 
+
+Then select "Container image" and click "Browse images" to find the image that you have just created (inside of your Amazon ECR image repository). Finished the previous steps, and once the lambda functions is created, click on it, and add a trigger (API Gateway) in the "Configuration" section. The General configuration also need to be edited, as shown in the next picture:
+
+![image](https://github.com/cblancac/text-classification/assets/105242658/017fe051-1f12-4ebc-8afd-369e8e1c961c)
+
+
+If you complete succesfully all the previous stpes, you are ready to test the text classifier! Just open your Postman, and send a a POST request using the API endpoint from your API Getaway. 
+
+![image](https://github.com/cblancac/text-classification/assets/105242658/b218e67e-1012-4430-8434-37361e1ab556)
