@@ -10,7 +10,7 @@ In this project, a text classifier has been trained to classify the feeling of a
 - An instance with an attached NVIDIA GPU, such as `g4dn.xlarge`, must have the appropriate NVIDIA driver installed. Follow this tutorial to get the appropiate NVIDIA driver: `https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/install-nvidia-driver.html` (in my case, section Option 3: GRID drivers (G5, G4dn, and G3 instances)
 
 ## 	:construction: Data Preparation
-The first thing to do in this project is to get a proper dataset. Hugging Face has a huge number of datasets, among which is the one used in this project: `emotion`. In the next table, the number of sentences per subset is shown:
+The first thing to do in this project is to get a proper dataset. `Hugging Face` has a huge number of datasets, among which is the one used in this project: `emotion`. In the next table, the number of sentences per subset is shown:
 
 | Subset | Size |
 | ----- | ---- |
