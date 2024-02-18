@@ -56,3 +56,6 @@ Additionally, an html file will be stored in the `results/` folder, with informa
 
 All the files generated for the text classifier has been uploaded to my `Hugging Face` account, with the `requirements.txt` and the script necessary to run inference using `Gradio`. You could tested directly from my [Hugging Face Spaces](https://huggingface.co/spaces/carblacac/emotion-detection)
 ![image](https://github.com/cblancac/text-classification/assets/105242658/418547db-1932-41c3-8b7c-49fd91ac1acf)
+
+
+## :airplane: Deployment
