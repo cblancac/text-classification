@@ -53,7 +53,7 @@ if __name__ == "__main__":
     if not os.path.exists(path_to_export):
         os.makedirs(path_to_export)
 
-    exp = explainer.explain_instance(text, predict, num_features=10, num_samples=2000)
+    exp = explainer.explain_instance(text, predict, num_features=5, num_samples=1000)
     exp.save_to_file(path_to_export / 'lime.html')
     print(inference(text))
 
