@@ -24,9 +24,9 @@ The dataset is imbalanced; the joy and sadness classes appear frequently, wherea
 
 There are several ways to deal with imbalanced data, including:
 
-Randomly oversample the minority class.
-Randomly undersample the majority class.
-Gather more labeled data from the underrepresented classes.
+* Randomly oversample the minority class.
+* Randomly undersample the majority class.
+* Gather more labeled data from the underrepresented classes.
 
 To keep things simple in this project, we'll work with the raw, unbalanced class frequencies. If you want to learn more about these sampling techniques, we recommend checking out the [Imbalanced-learn library](https://imbalanced-learn.org/stable/). Just make sure that you don't apply sampling methods before creating your train/test splits, or you'll get plenty of leakage between them!
 
