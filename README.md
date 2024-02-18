@@ -100,8 +100,9 @@ Then select "Container image" and click "Browse images" to find the image that y
 ![image](https://github.com/cblancac/text-classification/assets/105242658/017fe051-1f12-4ebc-8afd-369e8e1c961c)
 
 
-If you complete succesfully all the previous stpes, you are ready to test the text classifier! Just open your Postman, and send a a POST request using the API endpoint from your API Getaway. 
+If you complete succesfully all the previous stpes, you are ready to test the text classifier! Just open your Postman, and send a a POST request using the API endpoint from your API Getaway. Accessing to CloudWatch > Logs > Logs Groups, you can see how your API is working. 
 
 ![image](https://github.com/cblancac/text-classification/assets/105242658/b218e67e-1012-4430-8434-37361e1ab556)
+
 
 Congratulations! If you've come this far, you've managed to fine-tune one of Hugging Face's base models and deploy it to AWS.
