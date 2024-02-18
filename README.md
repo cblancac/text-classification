@@ -36,3 +36,10 @@ Transformer models have a maximum input sequence length that is referred to as t
 ![image](https://github.com/cblancac/text-classification/assets/105242658/4a44ecbc-efe4-4820-9c64-c236137dbfff)
 
 From the plot we see that for each emotion, most tweets are around 15 words long and the longest tweets are well below DistilBERT's maximum context size. Texts that are longer than a model's context size need to be truncated, which can lead to a loss in performance if the truncated text contains crucial information; in this case, it looks like that won't be an issue.
+
+
+
+## 	:weight_lifting_man: Training models
+Once the dataset is ready, it is time to train the model The model has not been trained from scrach, but a very large pretrained model `distilbert-base-uncased` has been taken from `Hugging Face, and later on it has been fine-tuned by using the dataset that was just created. At this way, a lot of time and money has been saved, taking the expert knowledge of the pretrained model over of the English language. To train the model, just execute the command `python entry_points/train.py'
+
+![image](https://github.com/cblancac/text-classification/assets/105242658/d67da7af-121a-4c66-8681-3e83b50be20a)
