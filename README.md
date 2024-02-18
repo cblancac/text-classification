@@ -43,3 +43,14 @@ From the plot we see that for each emotion, most tweets are around 15 words long
 Once the dataset is ready, it is time to train the model The model has not been trained from scrach, but a very large pretrained model `distilbert-base-uncased` has been taken from `Hugging Face`, and later on it has been fine-tuned by using the dataset that was just created. At this way, a lot of time and money has been saved, taking the expert knowledge of the pretrained model over of the English language. To train the model, just execute the command `python entry_points/train.py`
 
 ![image](https://github.com/cblancac/text-classification/assets/105242658/d67da7af-121a-4c66-8681-3e83b50be20a)
+
+
+## :tada: Make predictions
+
+Finally the prediction of the feeling of a sentence can be done running the script `python entry_points/train.py`. Executing this script, we will have to introduce our sentence as input and it will give us back a string with the category associated by the model to our sentence (SADNESS, JOY, LOVE, ANGER, FEAR or SURPRISE).
+
+Additionally, an html file will be stored in the `results/` folder, with information on the importance of the 5 most relevant words to make such a decision.
+
+![image](https://github.com/cblancac/text-classification/assets/105242658/dcca06fc-b88e-4405-80b7-ab14b384efb1)
+
+
