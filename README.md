@@ -71,7 +71,17 @@ The folder lambda-docker need to be storage in the EC2 instance. This folder con
   * `requirements.txt`: file containing a list of Python dependencies required for the application.
 
 Open your terminal, and connect to your virtual machine in AWS. Then you should execute the next commands:
-`sudo yum update`, `sudo yum install awscli -y`. Also Docker-compose need to be installed with: `sudo curl -L https://github.com/docker/compose/releases/latest/download/docker-compose-$(uname -s)-$(uname -m) -o /usr/local/bin/docker-compose`, `sudo chmod +x /usr/local/bin/docker-compose`, `sudo yum install docker`, `sudo service docker start` and `sudo usermod -a -G docker ec2-user`. Then logout from the instance and login again to verify the installation of Docker.
+* sudo yum update
+* sudo yum install awscli -y
+
+Also Docker-compose need to be installed with:
+* sudo curl -L https://github.com/docker/compose/releases/latest/download/docker-compose-$(uname -s)-$(uname -m) -o /usr/local/bin/docker-compose
+* sudo chmod +x /usr/local/bin/docker-compose
+* sudo yum install docker
+* sudo service docker start
+* sudo usermod -a -G docker ec2-user
+
+Then logout from the instance and login again to verify the installation of Docker.
     
 2.  **ECR**:
 Once finished with the EC2, you need to go to Amazon Elastic Container Registry. Create a new repository (private) by clicking in the orange button what you see in the image:
