@@ -54,3 +54,5 @@ Additionally, an html file will be stored in the `results/` folder, with informa
 ![image](https://github.com/cblancac/text-classification/assets/105242658/42eaf28e-49df-4321-9310-7035e6b24a60)
 
 
+This model could be also tested directly from my [Hugging Face Spaces](https://huggingface.co/spaces/carblacac/emotion-detection)https://huggingface.co/spaces/carblacac/emotion-detection
+![image](https://github.com/cblancac/text-classification/assets/105242658/418547db-1932-41c3-8b7c-49fd91ac1acf)
