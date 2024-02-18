@@ -31,3 +31,8 @@ There are several ways to deal with imbalanced data, including:
 To keep things simple in this project, we'll work with the raw, unbalanced class frequencies. If you want to learn more about these sampling techniques, we recommend checking out the [Imbalanced-learn library](https://imbalanced-learn.org/stable/). Just make sure that you don't apply sampling methods before creating your train/test splits, or you'll get plenty of leakage between them!
 
 
+Transformer models have a maximum input sequence length that is referred to as the `maximum context size`. In this project, the model choosen is `distilbert-base-uncased`, which has a maximum context size is 512 tokens. On average, 10 tokens represents 10 words, so our maximum number of words to consider would be ~384, which amounts to a few paragraphs of text. We can get a rough estimate of tweet lengths per emotion by looking at the distribution of words per tweet:
+
+![image](https://github.com/cblancac/text-classification/assets/105242658/4a44ecbc-efe4-4820-9c64-c236137dbfff)
+
+From the plot we see that for each emotion, most tweets are around 15 words long and the longest tweets are well below DistilBERT's maximum context size. Texts that are longer than a model's context size need to be truncated, which can lead to a loss in performance if the truncated text contains crucial information; in this case, it looks like that won't be an issue.
