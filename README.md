@@ -51,6 +51,6 @@ Finally the prediction of the feeling of a sentence can be done running the scri
 
 Additionally, an html file will be stored in the `results/` folder, with information on the importance of the 5 most relevant words to make such a decision.
 
-![image](https://github.com/cblancac/text-classification/assets/105242658/dcca06fc-b88e-4405-80b7-ab14b384efb1)
+![image](https://github.com/cblancac/text-classification/assets/105242658/42eaf28e-49df-4321-9310-7035e6b24a60)
 
 
