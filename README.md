@@ -59,3 +59,29 @@ All the files generated for the text classifier has been uploaded to my `Hugging
 
 
 ## :airplane: Deployment
+
+To deploy this model, four services are used from AWS:
+
+1. **EC2**:
+The folder lambda-docker need to be storage in the EC2 instance. This folder contains the next files:
+  * `Dockerfile`: configuration file used to build a Docker image.
+  * `app.py`: Python file containing the code for the application.
+  * `distilbert-base-uncased-finetuned-emotion`: directory containing data for a fine-tuned model.
+  * `exceptions.py`: Python file that contain definitions of custom exceptions used in the application.
+  * `requirements.txt`: file containing a list of Python dependencies required for the application.
+
+Open your terminal, and connect to your virtual machine in AWS. Then you should execute the next commands:
+`sudo yum update`, `sudo yum install awscli -y`. Also Docker-compose need to be installed with: `sudo curl -L https://github.com/docker/compose/releases/latest/download/docker-compose-$(uname -s)-$(uname -m) -o /usr/local/bin/docker-compose`, `sudo chmod +x /usr/local/bin/docker-compose`, `sudo yum install docker`, `sudo service docker start` and `sudo usermod -a -G docker ec2-user`. Then logout from the instance and login again to verify the installation of Docker.
+    
+2.  **ECR**:
+Once finished with the EC2, you need to go to Amazon Elastic Container Registry. Create a new repository (private) by clicking in the orange button what you see in the image:
+![image](https://github.com/cblancac/text-classification/assets/105242658/9d5a20ca-a1af-473f-9d46-cfcd1c9267d3)
+
+Once created, click in your repository name and click in "View push commands". You will see four commands that you need to execute in your ec2, inside of the lambda-docker directory.
+
+
+3. **Lambda**:
+After finish the third step, acces to Lambda service, and click in the "Create function" orange button (see the image).
+
+![image](https://github.com/cblancac/text-classification/assets/105242658/63fe7683-941d-4cf7-95cc-d05a48e814d2)
+ 
